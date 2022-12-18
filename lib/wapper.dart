@@ -1,9 +1,6 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter_signin_button/button_builder.dart';
-import 'package:kavinie/registerscreen.dart';
-
-
+import 'package:autocarservice/registerscreen.dart';
 
 import 'auth_checker.dart';
 import 'login_screen.dart';
@@ -22,35 +19,34 @@ class _wapperState extends State<wapper> {
       //width: 336,
       //height: 611,
       //constraints: BoxConstraints(
-        //maxHeight: double.infinity,
-     // ),
+      //maxHeight: double.infinity,
+      // ),
 
       body: Center(
         child: Row(
           mainAxisSize: MainAxisSize.min,
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
-          children:[
-
+          children: [
             Container(
-        constraints: BoxConstraints(
-        maxHeight: double.infinity,
-          maxWidth: double.infinity,
-        ),
+              constraints: BoxConstraints(
+                maxHeight: double.infinity,
+                maxWidth: double.infinity,
+              ),
 
               //width: 336,
-             // height: 611,
-             // color: Colors.white,
+              // height: 611,
+              // color: Colors.white,
               //padding: const EdgeInsets.only(left: 57, right: 56, top: 59, bottom: 122, ),
               child: Column(
-               // mainAxisSize: MainAxisSize.min,
+                // mainAxisSize: MainAxisSize.min,
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children:[
+                children: [
                   Container(
                     width: 223,
                     height: 215,
-                   child: Image(image: AssetImage('assets/images/img.png')),
+                    child: Image(image: AssetImage('assets/images/img.png')),
                   ),
                   SizedBox(height: 57.50),
                   Container(
@@ -60,21 +56,21 @@ class _wapperState extends State<wapper> {
                       //mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children:[
-
-
+                      children: [
                         Row(
-                         // mainAxisSize: MainAxisSize.min,
+                          // mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
-                          children:[
+                          children: [
                             SignInButtonBuilder(
                               text: 'SignIn With Email',
                               icon: Icons.email,
                               onPressed: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => const AuthChecker()),
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const AuthChecker()),
                                 );
                               },
                               backgroundColor: Colors.pinkAccent,
@@ -90,31 +86,29 @@ class _wapperState extends State<wapper> {
                     height: 50,
                     width: 300,
                     child: Row(
-                     // mainAxisSize: MainAxisSize.min,
+                      // mainAxisSize: MainAxisSize.min,
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
-                      children:[
-
-
+                      children: [
                         Row(
                           //mainAxisSize: MainAxisSize.min,
                           mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.end,
-                          children:[
+                          children: [
                             SignInButtonBuilder(
                               text: 'Register With Email',
                               icon: Icons.app_registration,
                               onPressed: () {
                                 Navigator.push(
                                   context,
-                                  MaterialPageRoute(builder: (context) => const  RegisterScreen()),
+                                  MaterialPageRoute(
+                                      builder: (context) =>
+                                          const RegisterScreen()),
                                 );
                               },
                               backgroundColor: Colors.greenAccent,
                               width: 220.0,
                             ),
-
-
                           ],
                         ),
                       ],

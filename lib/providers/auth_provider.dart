@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:kavinie/repository/auth_repository.dart';
+import 'package:autocarservice/repository/auth_repository.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 final authRepositoryProvider = Provider<AuthRepository>((ref) {
@@ -8,6 +8,4 @@ final authRepositoryProvider = Provider<AuthRepository>((ref) {
 
 final authStateProvider = StreamProvider<User?>((ref) {
   return ref.read(authRepositoryProvider).authStateChange;
-
-
 });

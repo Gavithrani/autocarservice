@@ -1,5 +1,5 @@
-import 'package:kavinie/login_controller.dart';
-import 'package:kavinie/login_state.dart';
+import 'package:autocarservice/login_controller.dart';
+import 'package:autocarservice/login_state.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
@@ -37,7 +37,6 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
               Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
-
                   child: const Text(
                     'Sign in',
                     style: TextStyle(fontSize: 20),
@@ -63,11 +62,11 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                   ),
                 ),
               ),
-            TextButton(
+              TextButton(
                 onPressed: () {
                   //forgot password screen
                 },
-               child: const Text(
+                child: const Text(
                   '',
                 ),
               ),
@@ -82,30 +81,24 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           .login(emailController.text, passwordController.text);
                     },
                     style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.pinkAccent,
-
-
+                      backgroundColor: Colors.pinkAccent,
                     ),
-
-
-
                   )),
               Row(
                 children: <Widget>[
-                 const Text(''),
+                  const Text(''),
                   TextButton(
                     child: const Text(
                       '',
-                     style: TextStyle(fontSize: 20),
+                      style: TextStyle(fontSize: 20),
                     ),
-                  onPressed: () {
+                    onPressed: () {
                       //signup screen
                     },
-
                   )
                 ],
                 mainAxisAlignment: MainAxisAlignment.center,
-             ),
+              ),
             ],
           )),
     );

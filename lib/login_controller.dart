@@ -1,5 +1,5 @@
-import 'package:kavinie/providers/auth_provider.dart';
-import 'package:kavinie/login_state.dart';
+import 'package:autocarservice/providers/auth_provider.dart';
+import 'package:autocarservice/login_state.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 class LoginController extends StateNotifier<LoginState> {
@@ -10,7 +10,9 @@ class LoginController extends StateNotifier<LoginState> {
   void login(String email, String password) async {
     state = const LoginStateLoading();
     try {
-      await ref.read(authRepositoryProvider).SignInEmailAndPassword(email, password);
+      await ref
+          .read(authRepositoryProvider)
+          .SignInEmailAndPassword(email, password);
       state = const LoginStateSuccess();
     } catch (e) {
       state = LoginStateError(e.toString());

@@ -1,10 +1,10 @@
-import 'package:kavinie/register_controller.dart';
-import 'package:kavinie/login_controller.dart';
-import 'package:kavinie/login_state.dart';
+import 'package:autocarservice/register_controller.dart';
+import 'package:autocarservice/login_controller.dart';
+import 'package:autocarservice/login_state.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
-import 'package:kavinie/login_screen.dart';
-import 'package:kavinie/wapper.dart';
+import 'package:autocarservice/login_screen.dart';
+import 'package:autocarservice/wapper.dart';
 
 class RegisterScreen extends StatefulHookConsumerWidget {
   const RegisterScreen({Key? key}) : super(key: key);
@@ -35,12 +35,11 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
               Container(
                 width: 223,
                 height: 215,
-                 child: Image(image: AssetImage('assets/images/img.png')),
+                child: Image(image: AssetImage('assets/images/img.png')),
               ),
               Container(
                   alignment: Alignment.center,
                   padding: const EdgeInsets.all(10),
-
                   child: const Text(
                     'Register',
                     style: TextStyle(fontSize: 20),
@@ -80,23 +79,16 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                   child: ElevatedButton(
                     child: const Text('Sign Up'),
                     onPressed: () {
-                      ref
-                          .read(RegisterControllerProvider.notifier)
-                          .Register(emailController.text, passwordController.text);
+                      ref.read(RegisterControllerProvider.notifier).Register(
+                          emailController.text, passwordController.text);
                       Navigator.push(
                         context,
-                        MaterialPageRoute(builder: (context) => const  wapper()),
+                        MaterialPageRoute(builder: (context) => const wapper()),
                       );
-
                     },
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.pinkAccent,
-
-
                     ),
-
-
-
                   )),
               Row(
                 children: <Widget>[
@@ -109,7 +101,6 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                     onPressed: () {
                       //signup screen
                     },
-
                   )
                 ],
                 mainAxisAlignment: MainAxisAlignment.center,

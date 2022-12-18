@@ -1,7 +1,8 @@
 import 'package:autocarservice/providers/auth_provider.dart';
-import 'package:autocarservice/home_screen.dart';
+//import 'package:autocarservice/home_screen.dart';
 import 'package:autocarservice/login_screen.dart';
 import 'package:autocarservice/wapper.dart';
+//import 'package:autocarservice/wapper.dart';
 import 'package:flutter/material.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:autocarservice/spalashscreen.dart';
@@ -15,7 +16,7 @@ class AuthChecker extends ConsumerWidget {
 
     return _authState.when(
         data: (user) {
-          if (user != null) return HomePage();
+          if (user != null) return wapper();
           return const LoginScreen();
         },
         loading: () => const SplashScreen(),

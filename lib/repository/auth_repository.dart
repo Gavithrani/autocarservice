@@ -1,5 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:kavinie/registerscreen.dart';
+import 'package:autocarservice/registerscreen.dart';
 
 class AuthRepository {
   const AuthRepository(this._auth);

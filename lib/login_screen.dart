@@ -81,7 +81,7 @@ class _LoginScreenState extends ConsumerState<LoginScreen> {
                           .login(emailController.text, passwordController.text);
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.pinkAccent,
+                      //backgroundColor: Colors.pinkAccent,
                     ),
                   )),
               Row(

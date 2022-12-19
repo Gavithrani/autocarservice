@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1087588012232",
+    "project_id": "autocarcare-f5953",
+    "storage_bucket": "autocarcare-f5953.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087588012232:android:3bab759a8bd3687c7b95fd",
+        "android_client_info": {
+          "package_name": "com.example.autocarservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087588012232-a406iogpjlv99c9oqhg0tj9lgrqpkgkt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDpLFh8UWS6B8BCKrGLC9djSeuD3nixHwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087588012232-a406iogpjlv99c9oqhg0tj9lgrqpkgkt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

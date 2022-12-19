@@ -87,7 +87,7 @@ class _RegisterScreenState extends ConsumerState<RegisterScreen> {
                       );
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.pinkAccent,
+                     // backgroundColor: Colors.pinkAccent,
                     ),
                   )),
               Row(
